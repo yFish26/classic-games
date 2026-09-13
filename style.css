@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* 屏幕切换 */
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.screen.active {
+  display: flex;
+}
+
+/* 主菜单 */
+#menu-screen h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: #f39c12;
+  text-shadow: 0 0 20px rgba(243, 156, 18, 0.5);
+  margin-bottom: 4px;
+}
+
+.version {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 280px;
+}
+
+.menu-btn {
+  padding: 14px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px solid #f39c12;
+  background: transparent;
+  color: #f39c12;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.menu-btn:hover:not(.disabled) {
+  background: #f39c12;
+  color: #1a1a2e;
+}
+
+.menu-btn.disabled {
+  border-color: #555;
+  color: #555;
+  cursor: not-allowed;
+  font-size: 0.9rem;
+}
+
+/* 游戏界面顶部栏 */
+.game-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+.back-btn {
+  background: transparent;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #f39c12;
+  color: #1a1a2e;
+}
+
+.source {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.stat-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+.stat-label {
+  color: #888;
+}
+
+.stat-value {
+  color: #f39c12;
+  font-weight: bold;
+  min-width: 20px;
+}
+
+.stat-sep {
+  color: #555;
+}
+
+.time {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f39c12;
+  font-family: 'Courier New', monospace;
+  min-width: 30px;
+  text-align: right;
+}
+
+/* Canvas 容器 */
+canvas {
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 4px;
+  display: block;
+}
