@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Games</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 主菜单 -->
+    <div id="menu-screen" class="screen active">
+      <h1>Classic Games</h1>
+      <p class="version">v1.0</p>
+      <div class="menu-buttons">
+        <button class="menu-btn" data-game="bricks">Bricks</button>
+        <button class="menu-btn" data-game="tetris">Tetris</button>
+        <button class="menu-btn disabled" data-game="coming">Pac-man Please look forward to it</button>
+        <button class="menu-btn disabled" data-game="coming">Ting-to chess Please look forward to it</button>
+      </div>
+    </div>
+
+    <!-- Bricks 游戏界面 -->
+    <div id="game-bricks" class="screen game-screen">
+      <div class="game-header">
+        <button class="back-btn">← Back</button>
+        <span class="source">Source: Bricks</span>
+        <span class="stat-display">
+          <span class="stat-label">Score:</span>
+          <span id="bricks-score" class="stat-value">0</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Lives:</span>
+          <span id="bricks-lives" class="stat-value">3</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Time:</span>
+          <span class="time">0</span>
+        </span>
+      </div>
+      <canvas id="bricks-canvas" width="480" height="320"></canvas>
+    </div>
+
+    <!-- Tetris 游戏界面 -->
+    <div id="game-tetris" class="screen game-screen">
+      <div class="game-header">
+        <button class="back-btn">← Back</button>
+        <span class="source">Source: Tetris</span>
+        <span class="stat-display">
+          <span class="stat-label">Score:</span>
+          <span id="tetris-score" class="stat-value">0</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Lives:</span>
+          <span id="tetris-lives" class="stat-value">3</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Time:</span>
+          <span class="time">0</span>
+        </span>
+      </div>
+      <canvas id="tetris-canvas" width="300" height="600"></canvas>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Games</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 主菜单 -->
+    <div id="menu-screen" class="screen active">
+      <h1>Classic Games</h1>
+      <p class="version">v1.0</p>
+      <div class="menu-buttons">
+        <button class="menu-btn" data-game="bricks">Bricks</button>
+        <button class="menu-btn" data-game="tetris">Tetris</button>
+        <button class="menu-btn disabled" data-game="coming">Pac-man Please look forward to it</button>
+        <button class="menu-btn disabled" data-game="coming">Ting-to chess Please look forward to it</button>
+      </div>
+    </div>
+
+    <!-- Bricks 游戏界面 -->
+    <div id="game-bricks" class="screen game-screen">
+      <div class="game-header">
+        <button class="back-btn">← Back</button>
+        <span class="source">Source: Bricks</span>
+        <span class="stat-display">
+          <span class="stat-label">Score:</span>
+          <span id="bricks-score" class="stat-value">0</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Lives:</span>
+          <span id="bricks-lives" class="stat-value">3</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Time:</span>
+          <span class="time">0</span>
+        </span>
+      </div>
+      <canvas id="bricks-canvas" width="480" height="320"></canvas>
+    </div>
+
+    <!-- Tetris 游戏界面 -->
+    <div id="game-tetris" class="screen game-screen">
+      <div class="game-header">
+        <button class="back-btn">← Back</button>
+        <span class="source">Source: Tetris</span>
+        <span class="stat-display">
+          <span class="stat-label">Score:</span>
+          <span id="tetris-score" class="stat-value">0</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Lives:</span>
+          <span id="tetris-lives" class="stat-value">3</span>
+          <span class="stat-sep">|</span>
+          <span class="stat-label">Time:</span>
+          <span class="time">0</span>
+        </span>
+      </div>
+      <canvas id="tetris-canvas" width="300" height="600"></canvas>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
